@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #b4aeae;
+}
+
+/* الهيدر الأساسي */
+header { 
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 100px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header .container i {
+  color: white;
+  font-size: 2em;
+}
+
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .container nav a {
+  color: #ddd;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header .container nav a:hover {
+  color: white;
+}
+
+/* Media Query للشاشات الصغيرة */
+@media (max-width: 768px) {
+  header {
+    width: 100%;  /* زيادة العرض عشان يكون مناسب */
+    border-radius: 0;
+    filter: drop-shadow(0 0 5px #000); /* إضافة ظل للهيدر */
+  }
+  
+  header .container {
+    flex-direction: column; /* تحويل القائمة إلى عمود */
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  header .container i {
+    font-size: 1.5em; /* تصغير الأيقونة */
+    margin-bottom: 20px;
+  }
+
+  header .container nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  header .container nav a {
+    font-size: 1.5em; /* تصغير الخط */
+  }
+}
+@media (max-width: 1024px) {
+  header .container {
+    flex-direction: column; /* تحويل القائمة إلى عمود */
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  header .container i {
+    font-size: 1.5em; /* تصغير الأيقونة */
+    margin-bottom: 20px;
+  }
+
+  header .container nav {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+}
+@media (max-width: 820px) {
+  header {
+    width: 100%;  /* زيادة العرض عشان يكون مناسب */
+    border-radius: 0;
+    filter: drop-shadow(0 0 5px #000); /* إضافة ظل للهيدر */
+  }
+  header .container {
+    flex-direction: column; /* تحويل القائمة إلى عمود */
+    height: auto;
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  header .container i {
+    font-size: 1.5em; /* تصغير الأيقونة */
+    margin-bottom: 20px;
+  }
+
+  header .container nav {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+}
+
+
